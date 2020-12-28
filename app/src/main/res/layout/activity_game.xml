@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:orientation="vertical"
+    android:id="@+id/buttonConstraintLayout"
+    android:background="@drawable/b_bottom"
+    >
+
+    <Button
+        android:id="@+id/state"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="| |"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/shape"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"><!--android:text=" △" android:rotation="90"-->
+
+    </Button>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Score:0"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <!--滑块长240 宽120-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:background="@color/colorLightYellow"
+                android:text="FREE"
+                android:textSize="18dp"
+                android:id="@+id/bottom1"
+
+                ></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:background="@color/colorLightYellow"
+                android:text="FREE"
+                android:textSize="18dp"
+                android:id="@+id/bottom2"
+
+                ></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--
+    如HuaWei caz-al10 像素1920*1080 屏幕5英寸  139.6x69.7mm  5.5x2.74英寸，
+    屏幕像素密度441ppi（横像素/横英寸，或者 PPI = √（长度像素数² + 宽度像素数²） / 屏幕尺寸，本手机是第二个计算方法）
+    得到机型的dps值为 长pxs*160/ppi=1920*160/441 dp=696.6 dp 宽pxs*160/ppi=1080*160/441 dp=391.8 dp
+
+    1px为一个像素点，不建议被使用，不同的机型一个图片长宽像素点占比不同
+
+    ppi (pixels per inch)：图像分辨率 （在图像中，每英寸所包含的像素数目）
+    dpi (dots per inch)： 打印分辨率 （每英寸所能打印的点数，即打印精度）
+
+    dp：Density-independent pixels，以160PPI屏幕为标准，则1dp=1px，dp和px的换算公式 ：
+    dp*ppi/160 = px。比如1dp x 320ppi/160 = 2px。
+    sp：Scale-independent pixels，它是安卓的字体单位，以160PPI屏幕为标准，当字体大小为 100%时， 1sp=1px。
+    sp 与 px 的换算公式：sp*ppi/160 = px
+
+    文字用sp，非文字用dp-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ResultActivity"
+    android:background="@drawable/b1"
+    >
+    <!--
+    <Button android:id="@+id/forceOffline"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="fore offline"
+        android:textAllCaps="false">
+
+    </Button>-->
+
+
+        <TextView android:id="@+id/result_score"
+            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="160dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Score:0"
+            android:textSize="50dp"
+            android:textColor="@color/colorLightYellow"
+            android:textStyle="bold"
+            android:textAllCaps="false">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/result_wholeScore"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/colorWhite"
+                android:paddingLeft="50dp"
+                android:layout_margin="10dp"
+                android:text="WholeScore:0"
+                android:textSize="30dp"
+                android:textAllCaps="false">
+
+            </TextView>
+
+            <TextView android:id="@+id/result_bestTimes"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorWhite"
+                android:paddingLeft="50dp"
+                android:text="best:"
+                android:textSize="30dp"
+                android:textAllCaps="false">
+
+            </TextView>
+
+            <TextView android:id="@+id/result_goodTimes"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:paddingLeft="50dp"
+                android:text="good:"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dp"
+                android:textAllCaps="false">
+
+            </TextView>
+
+            <TextView android:id="@+id/result_missTimes"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:text="miss:"
+                android:paddingLeft="50dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dp"
+                android:textAllCaps="false">
+
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+

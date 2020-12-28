@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/toast"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:shadowRadius="7.0"
+        android:shadowDx="-7"
+        android:shadowDy="7"
+        android:shadowColor="@color/colorSilver"
+        android:layout_marginBottom="125dp"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        ></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

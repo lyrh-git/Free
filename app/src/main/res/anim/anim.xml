@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:duration="2000"
+    android:fromXDelta="100"
+    android:fromYDelta="100"
+    android:toXDelta="300"
+    android:toYDelta="300"
+
+    >
+
+</translate>
+

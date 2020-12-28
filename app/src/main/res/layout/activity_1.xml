@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Activity1"
+android:orientation="vertical"
+android:id="@+id/constraintLayout"
+    >
+
+    <Button
+        android:layout_width="320px"
+        android:layout_height="160px"
+        android:layout_marginTop="1200px"
+        android:background="@color/colorLightYellow"
+        android:text="LINE1"
+        android:textSize="50px"
+        android:id="@+id/test_bottom1"
+        android:layout_marginLeft="160px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        ></Button>
+
+    <Button
+        android:layout_width="320px"
+        android:layout_height="160px"
+        android:layout_marginTop="400dp"
+        android:background="@color/colorLightYellow"
+        android:text="LINE2"
+        android:textSize="50px"
+        android:id="@+id/test_bottom2"
+        android:layout_marginLeft="560px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        ></Button>
+
+    <!--
+    HuaWei caz-al10 像素1920*1080 屏幕5英寸  139.6x69.7mm  5.5x2.74英寸，
+    dpi每英寸的像素点数
+    低密度     ldpi：  240x320 120    1dp=0.75px
+    中密度     mdpi:   320x480 160    1dp=1px
+    高密度     hdpi:   480x800 240    1dp=1.5px
+    超高密度   xhdpi： 720x1280 320   1dp=2px
+    超超高密度 xxhdpi: 1080x1920 480  1dp=3px
+    屏幕像素密度441ppi（横像素/横英寸，或者 PPI = √（长度像素数² + 宽度像素数²） / 屏幕尺寸，本手机是第二个计算方法）
+    得到机型的dps值为 长pxs*160/ppi=1920*160/441 dp=696.6 dp 宽pxs*160/ppi=1080*160/441 dp=391.8 dp
+
+    1px为一个像素点，不建议被使用，不同的机型一个图片长宽像素点占比不同
+
+    ppi (pixels per inch)：图像分辨率 （在图像中，每英寸所包含的像素数目）
+    dpi (dots per inch)： 打印分辨率 （每英寸所能打印的点数，即打印精度）
+
+    dp：Density-independent pixels，以160PPI屏幕为标准，则1dp=1px，dp和px的换算公式 ：
+    dp*ppi/160 = px。比如1dp x 320ppi/160 = 2px。
+    sp：Scale-independent pixels，它是安卓的字体单位，以160PPI屏幕为标准，当字体大小为 100%时， 1sp=1px。
+    sp 与 px 的换算公式：sp*ppi/160 = px
+
+    文字用sp，非文字用dp-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

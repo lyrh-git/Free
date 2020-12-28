@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/content"
+    android:orientation="vertical"
+    android:background="@drawable/_b2"
+    >
+<!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="button"
+        android:textAllCaps="false"
+        >
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_startAnim"
+        android:text="start anim"
+        android:textAllCaps="false"
+        >
+
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="here"
+        >
+
+    </TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remove"
+        android:text="remove text"
+        android:textAllCaps="false"
+        >
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:text="get location"
+        >
+
+    </Button>-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/Activity1"-->
+<!--        android:text="Activity1"-->
+<!--        android:textAllCaps="false"-->
+<!--        >-->
+
+<!--    </Button>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="230dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:id="@+id/music"
+            android:text="开始游戏"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:background="@color/colorLightYellow"
+            >
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+
+            android:textSize="20dp"
+            android:id="@+id/exit"
+            android:text="退出游戏"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:background="@color/colorLightYellow"
+            >
+
+        </Button>
+    </LinearLayout>
+
+
+
+<!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/force"
+        android:text="force"
+        android:textAllCaps="false"
+        >
+
+    </Button>
+-->
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
